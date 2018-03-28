@@ -24,7 +24,7 @@ if(ERRORS.length > 0) {
     return;
 }
 
-entropayApi.signup(program.username, program.email, program.password, { birthDay: 1, birthMonth: "Jan", birthYear: "1980"})
+entropayApi.signup(program.username, program.email, program.password)
 .then(email => {
     console.log(emojic.whiteCheckMark + "\nAccount created");
 })
